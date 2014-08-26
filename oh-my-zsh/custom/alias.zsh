@@ -1,5 +1,5 @@
-# LS_COLORS=true
-# export LS_COLORS
+# Author: Joao Goncalves
+# Path: ~/.oh-my-zsh/custom/
 
 # Tree levels and colorized
 alias t='tree -C -L 1'

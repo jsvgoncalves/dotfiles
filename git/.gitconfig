@@ -1,0 +1,17 @@
+# Author: Joao Goncalves
+# Path: ~/
+
+[user]
+	name = João Gonçalves
+	email = jsvgoncalves@gmail.com
+[alias]
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+[core]
+	filemode = false
+	editor = vim
+[color]
+	ui = true
+[commit]
+	template = /home/joao/.gitmessage
+[push]
+	default = simple
