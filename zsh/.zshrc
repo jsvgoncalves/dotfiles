@@ -42,13 +42,17 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git cake colorize colored-man extract autojump)
 
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/home/joao/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/var/www/lithium/libraries/lithium/console
+export PATH=$PATH:$HOME/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/var/www/lithium/libraries/lithium/console
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+# For python virtualenvwrapper
+export WORKON_HOME=~/.python-virtualenvs
+export PROJECT_HOME=~/src
+source /usr/bin/virtualenvwrapper.sh
+
 
 export PATH="$HOME/lib/adt/sdk/tools/:$HOME/lib/adt/sdk/platform-tools/:$PATH"
 source /usr/local/bin/virtualenvwrapper.sh
@@ -58,5 +62,7 @@ export DISABLE_AUTO_TITLE=true
 source $HOME/bin/tmuxinator.zsh
 export EDITOR=vim
 
+export TERM=screen-256color       # for a tmux -2 session (also for screen)
+eval `dircolors /home/joao/.dircolors/dircolors.256dark`
 [[ $- != *i* ]] && return
-[[ -z "$TMUX" ]] && exec tmux
+[[ -z "$TMUX" ]] && exec tmux -2
