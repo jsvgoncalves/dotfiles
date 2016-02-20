@@ -16,5 +16,10 @@ alias rdbc='rake db:drop:all'
 # Nautilus
 alias here='nautilus .'
 
-# apt-get
-alias i='sudo apt-get install'
+# apt-get or dnf install
+alias i='sudo apt-get install -y'
+alias ii='sudo dnf install -y'
+
+# clear
+
+alias c='clear'
