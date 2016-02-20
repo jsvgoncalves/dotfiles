@@ -4,6 +4,7 @@
 [user]
 	name = João Gonçalves
 	email = jsvgoncalves@gmail.com
+	#email = jsvgoncalves@redhat.com
 [alias]
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 [core]
@@ -12,6 +13,6 @@
 [color]
 	ui = true
 [commit]
-	template = /home/joao/.gitmessage
+	template = /home/jgoncalv/.gitmessage
 [push]
 	default = simple

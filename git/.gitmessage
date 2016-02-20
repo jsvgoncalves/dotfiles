@@ -9,7 +9,11 @@ module:
 *
 
 
+# Choose one of following:
 Signed-off-by: Joao Goncalves <jsvgoncalves@gmail.com>
+# Signed-off-by: Joao Goncalves <jsvgoncalves@redhat.com>
+# Reviewed-by: Joao Goncalves <jsvgoncalves@gmail.com>
+# Reviewed-by: Joao Goncalves <jsvgoncalves@redhat.com>
 #
 #                               End
 #
