@@ -30,6 +30,13 @@ Important folders
 
 - icon files for the .desktop files I use.
 
+Switch Theme on urxvt
+------
+
+1. `sdark`
+2. Detach tmux
+3. Open new urxvt
+4. `tmux attach`
 
 Also
 ------

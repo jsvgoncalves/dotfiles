@@ -1,0 +1,2 @@
+URxvt.font: xft:xos4 Terminus:style=Regular:pixelsize=20
+URxvt.scrollBar: false

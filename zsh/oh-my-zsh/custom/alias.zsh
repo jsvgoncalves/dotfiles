@@ -19,7 +19,13 @@ alias here='nautilus .'
 # apt-get or dnf install
 alias i='sudo apt-get install -y'
 alias ii='sudo dnf install -y'
+alias ia='sudo pacman -Syu'
 
 # clear
 
 alias c='clear'
+
+# urxvt solarized
+
+alias sdark='xrdb $HOME/.Xresources; xrdb -merge $HOME/.Xsolarized_dark'
+alias slight='xrdb $HOME/.Xresources; xrdb -merge $HOME/.Xsolarized_light'
