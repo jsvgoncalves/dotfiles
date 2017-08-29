@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# See: https://cgit.freedesktop.org/xorg/lib/libX11/tree/nls/en_US.UTF-8/Compose.pre
+setxkbmap -option compose:caps
+
 solarized=$HOME/.Xsolarized_dark
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
