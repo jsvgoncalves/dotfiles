@@ -64,5 +64,6 @@ export EDITOR=vim
 
 export TERM=screen-256color       # for a tmux -2 session (also for screen)
 eval `dircolors /home/joao/.dircolors/dircolors.256dark`
-[[ $- != *i* ]] && return
-[[ -z "$TMUX" ]] && exec tmux -2
+# Auto-start TMUX
+[[ -o login ]] && return
+[[ -z "$TMUX" ]] && tmux -2
