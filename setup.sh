@@ -2,6 +2,13 @@
 echo "Do not run. ctrl-c"
 read -n 1
 
+## xorg
+cp xorg/* $HOME/
+
+## i3
+mkdir .i3/
+cp i3/* $HOME/.i3/
+
 ## zsh
 # zshrc
 cp zsh/.zshrc $HOME/
@@ -38,3 +45,8 @@ mkdir -p $HOME/src
 mkdir -p $HOME/src/golang/src
 mkdir -p $HOME/src/golang/pkg
 mkdir -p $HOME/src/golang/bin
+
+## Pictures
+mkdir -p Pictures/wallpapers
+# For feh background
+ln -s favourite_wallpaper.png background.png
