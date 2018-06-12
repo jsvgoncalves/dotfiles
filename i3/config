@@ -123,9 +123,12 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym Print exec scrot ~/Pictures/Screenshots/screenshot_%Y_%m_%d_%H_%M_%S.png
 
 # volume controls
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +10%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -10%
-bindsym XF86AudioMute exec pactl set-sink-volume 0 0%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5%
+bindsym XF86AudioMute exec pactl set-sink-volume 2 0%
+#bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+#bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+#bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # lock screen
 bindsym $mod+Control+l exec i3lock -i ~/Pictures/wallpapers/background.png
