@@ -8,11 +8,12 @@
 [alias]
 	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 [core]
-	filemode = false
+	fileMode = false
 	editor = vim
+	pager = sed 's/\t/...     /g' | less -R
 [color]
 	ui = true
 [commit]
-	template = /home/jgoncalv/.gitmessage
+	template = /home/jsvgoncalves/.gitmessage
 [push]
 	default = simple
