@@ -29,3 +29,5 @@ alias c='clear'
 
 alias sdark='xrdb $HOME/.Xresources; xrdb -merge $HOME/.Xsolarized_dark'
 alias slight='xrdb $HOME/.Xresources; xrdb -merge $HOME/.Xsolarized_light'
+
+alias lg='ls -als | grep'
