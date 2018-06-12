@@ -1,2 +1,6 @@
-URxvt.font: xft:xos4 Terminus:style=Regular:pixelsize=20
+URxvt.font:             xft:inconsolata:pixelsize=18:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=14:antialias=true,hinting=true
+URxvt.boldFont:         xft:inconsolata:pixelsize=18:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=13:antialias=true,hinting=true
+URxvt.italicFont:       xft:inconsolata:pixelsize=18:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=13:antialias=true,hinting=true
+URxvt.bolditalicFont:   xft:inconsolata:pixelsize=18:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=13:antialias=true,hinting=true
+
 URxvt.scrollBar: false
