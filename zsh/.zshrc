@@ -40,7 +40,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git cake colorize colored-man extract autojump)
+plugins=(git cake colorize colored-man-pages extract autojump)
 
 
 source $ZSH/oh-my-zsh.sh
@@ -55,15 +55,16 @@ source /usr/bin/virtualenvwrapper.sh
 
 
 export PATH="$HOME/lib/adt/sdk/tools/:$HOME/lib/adt/sdk/platform-tools/:$PATH"
-source /usr/local/bin/virtualenvwrapper.sh
+export PATH="$PATH:$HOME/.local/bin/"
+#source /usr/local/bin/virtualenvwrapper.sh
 
 # For tmuxinator
 export DISABLE_AUTO_TITLE=true
-source $HOME/bin/tmuxinator.zsh
+#source $HOME/bin/tmuxinator.zsh # No longer using tmuxinator, tmuxp instead.
 export EDITOR=vim
 
 export TERM=screen-256color       # for a tmux -2 session (also for screen)
-eval `dircolors /home/joao/.dircolors/dircolors.256dark`
+eval `dircolors /home/jsvgoncalves/.dircolors/dircolors.256dark`
 # Auto-start TMUX
 [[ -o login ]] && return
 [[ -z "$TMUX" ]] && tmux -2
