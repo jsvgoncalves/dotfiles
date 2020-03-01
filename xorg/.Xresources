@@ -1,10 +1,11 @@
 URxvt.font:             xft:inconsolata:pixelsize=24:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=18:antialias=true,hinting=true
-URxvt.boldFont:         xft:inconsolata:pixelsize=24:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=18:antialias=true,hinting=true
+URxvt.boldFont:         xft:inconsolata:pixelsize=24:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=20:antialias=true,hinting=true
 URxvt.italicFont:       xft:inconsolata:pixelsize=24:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=18:antialias=true,hinting=true
 URxvt.bolditalicFont:   xft:inconsolata:pixelsize=24:antialias=true:hinting=true, xft:dejavu sans mono:pixelsize=18:antialias=true,hinting=true
 URxvt.scrollBar: false
 
 ! https://github.com/simmel/urxvt-resize-font
+! https://aur.archlinux.org/packages/urxvt-resize-font-git/
 URxvt.perl-ext-common: resize-font
 URxvt.resize-font.smaller: C-minus
 URxvt.resize-font.bigger: C-plus
