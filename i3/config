@@ -168,20 +168,26 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bar {
-    position top
-    separator_symbol " "
-    colors {
-        background #$bgcolor
-        statusline #$txtcolor
-        separator #$txtcolor
-        focused_workspace  #$fgcolor #$fgcolor #$bgcolor
-        inactive_workspace #$bgcolor #$bgcolor #$txtcolor
-    }
-    status_command i3status -c ~/.i3/i3status.conf | /home/jsvgoncalves/lib/weather.py --unit c --wrap-i3-status 784254 --format="{city}: {temp}º {unit_temperature}, {code} {text}, {sunset}, {wind_direction_arrow} {wind_speed} {unit_speed}, {humidity}%      " --position=0
-}
-
-client.focused                  #$fgcolor #$fgcolor #$bgcolor
+#bar {
+#    position top
+#    separator_symbol " "
+#    colors {
+#        background #$bgcolor
+#        statusline #$txtcolor
+#        separator #$txtcolor
+#        focused_workspace  #$fgcolor #$fgcolor #$bgcolor
+#        inactive_workspace #$bgcolor #$bgcolor #$txtcolor
+#    }
+#    #status_command i3status -c ~/.config/i3/i3status.conf | /home/jsvgoncalves/lib/weather.py --unit c --wrap-i3-status 784254 --format="{city}: {temp}º {unit_temperature}, {code} {text}, {sunset}, {wind_direction_arrow} {wind_speed} {unit_speed}, {humidity}%      " --position=0
+#    status_command i3status -c ~/.config/i3/i3status.conf | /home/jsvgoncalves/lib/weather.py --wrap-i3-status --city-id 2658822 --format="{city}: {temp_c}ºC, {text}, {sunset}, {wind_direction_arrow}, {humidity}%" --position=0
+#}
+#
+client.focused # # #  #6883f0
 client.unfocused                #$bgcolor #$bgcolor #$fgcolor
 client.focused_inactive         #$bgcolor #$bgcolor #$fgcolor
 client.urgent                   #$bgcolor #$bgcolor #$urgent
+
+for_window [class=".*"] border pixel 1 # remove borders
+gaps inner 10
+gaps outer 15
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
