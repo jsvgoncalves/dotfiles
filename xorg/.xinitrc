@@ -23,5 +23,5 @@ if [ -f "$userresources" ]; then
     xrdb -merge "$userresources"; xrdb -merge "$solarized"
 fi
 
-feh --bg-scale $HOME/Pictures/wallpapers/background.png
+feh --bg-scale $HOME/Pictures/wallpapers/background.png --no-fehbg
 exec i3
