@@ -1,0 +1,30 @@
+#!/bin/env python3
+# -*- coding: utf-8 -*-
+"""Check or set brightness.
+
+@Credit: bbguimaraes
+"""
+import os, sys
+
+
+F = '/sys/class/backlight/intel_backlight/brightness'
+
+
+def main(p=None):
+    display(cur(), max()) if p is None else set(parse(p))
+def read(n):
+    with open(n) as f: return int(f.read())
+def cur():
+    return read(F)
+def max():
+    return read('/sys/class/backlight/intel_backlight/max_brightness')
+def display(p, m):
+    print(f'{p * 100.0 / m:.2f}% ({p}/{m})')
+def parse(p):
+    return int(p) if p[-1] != '%' else max() * int(p[:-1]) // 100
+def set(p):
+    with open(F, 'w') as f: print('{:d}'.format(p), file=f)
+
+
+if __name__ == '__main__':
+    main(*sys.argv[1:])
