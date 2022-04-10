@@ -1,0 +1,1 @@
+echo -e "power on\nconnect 70:26:05:BF:FE:D6" | bluetoothctl
