@@ -133,6 +133,10 @@ bindsym XF86AudioMute exec pactl set-sink-volume 2 0%
 #bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
 #bindsym XF86AudioMute exec amixer -q set Master toggle
 
+bindsym XF86AudioPlay exec mpv_bindings.sh -p
+bindsym XF86AudioPrev exec mpv_bindings.sh -pv
+bindsym XF86AudioNext exec mpv_bindings.sh -nx
+
 # lock screen
 bindsym $mod+Control+l exec i3lock -i ~/Pictures/wallpapers/background.png
 
