@@ -2,18 +2,28 @@
 # Path: ~/
 
 [user]
-	name = João Gonçalves
-	email = jsvgoncalves@gmail.com
-	#email = jsvgoncalves@redhat.com
+name = João Gonçalves
+email = jsvgoncalves@gmail.com
 [alias]
-	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
 [core]
-	fileMode = false
-	editor = vim
-	pager = sed 's/\t/...     /g' | less -R
+fileMode = false
+editor = vim
+pager = sed 's/\t/...     /g' | less -R
+#whitespace = cr-at-eol
+#autocrlf = false
 [color]
-	ui = true
+ui = true
 [commit]
-	template = /home/jsvgoncalves/.gitmessage
+template = /home/jsvgoncalves/.gitmessage
 [push]
-	default = simple
+default = simple
+[color "diff"]
+whitespace = red reverse
+[init]
+defaultBranch = master
+[filter "lfs"]
+required = true
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+process = git-lfs filter-process

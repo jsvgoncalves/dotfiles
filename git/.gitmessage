@@ -10,10 +10,7 @@ module:
 
 
 # Choose one of following:
-Signed-off-by: Joao Goncalves <jsvgoncalves@gmail.com>
-# Signed-off-by: Joao Goncalves <jsvgoncalves@redhat.com>
+Signed-off-by: Joao Goncalves <goncalves@ecoinvent.org>
+# Signed-off-by: Joao Goncalves <jsvgoncalves@gmail.com>
+# Reviewed-by: Joao Goncalves <goncalves@ecoinvent.org>
 # Reviewed-by: Joao Goncalves <jsvgoncalves@gmail.com>
-# Reviewed-by: Joao Goncalves <jsvgoncalves@redhat.com>
-#
-#                               End
-#
