@@ -56,12 +56,10 @@ source /usr/bin/virtualenvwrapper.sh
 
 export PATH="$HOME/lib/adt/sdk/tools/:$HOME/lib/adt/sdk/platform-tools/:$PATH"
 export PATH="$PATH:$HOME/.local/bin/"
-#source /usr/local/bin/virtualenvwrapper.sh
+export EDITOR=nvim
 
 # For tmuxinator
 export DISABLE_AUTO_TITLE=true
-#source $HOME/bin/tmuxinator.zsh # No longer using tmuxinator, tmuxp instead.
-export EDITOR=vim
 
 export TERM=screen-256color       # for a tmux -2 session (also for screen)
 eval `dircolors /home/jsvgoncalves/.dircolors/dircolors.256dark`
