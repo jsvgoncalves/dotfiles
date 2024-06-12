@@ -1,7 +1,7 @@
 #
 # Title | Summary
 # [Max 50 chars]                               !#
-module:
+title
 
 #
 # Description
@@ -10,7 +10,5 @@ module:
 
 
 # Choose one of following:
-Signed-off-by: Joao Goncalves <goncalves@ecoinvent.org>
-# Signed-off-by: Joao Goncalves <jsvgoncalves@gmail.com>
-# Reviewed-by: Joao Goncalves <goncalves@ecoinvent.org>
-# Reviewed-by: Joao Goncalves <jsvgoncalves@gmail.com>
+Signed-off-by: João Gonçalves <jsvgoncalves@gmail.com>
+# Reviewed-by: João Gonçalves <jsvgoncalves@gmail.com>
